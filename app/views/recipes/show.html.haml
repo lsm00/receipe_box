@@ -1,6 +1,10 @@
 = image_tag @recipe.image.url(:medium, class: "recipe-image")
 %h1= @recipe.title
 %p= simple_format @recipe.description
+%p
+  Submitted by User:
+  = mail_to @recipe.user.email
+%p
 
 =link_to "Back", root_path, class: "btn btn-default"
 - if current_user == @recipe.user
