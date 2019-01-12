@@ -62,6 +62,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'therubyracer', '~> 0.12.2'
+gem 'devise'
 gem 'simple_form', '~> 4.0'
 gem 'haml', '~>5.0'
 gem 'bootstrap-sass', '~>3.3'
